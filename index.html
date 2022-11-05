@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+     <div class="cls">
+        <h3 style="text-align:center;color:rgb(223, 127, 49)">calculator</h3>
+            <div class="row">
+                <div class="col-5"></div>
+            <div class="col-2 btn btn-primary">
+               <input id="result" type="text" placeholder="enter"class="form-control mt-2">
+                <div>
+                <button id="seven"onclick="displayNum(7)">7</button>
+                <button id="eight"onclick="displayNum(8)">8</button>
+                <button  id="nine"onclick="displayNum(9)">9</button>
+                <button id="mul"onclick="displayNum('*')" >*</button>
+                </div>
+                <div>
+                <button id="four"onclick="displayNum(4)">4</button>
+                <button id="five"onclick="displayNum(5)">5</button>
+                <button id="six"onclick="displayNum(6)">6</button>
+                <button id="min"onclick="displayNum('-')">-</button>
+                </div>
+                <div>
+                <button id="one"onclick="displayNum(1)">1</button>
+                <button id="two"onclick="displayNum(2)">2</button>
+                <button id="three"onclick="displayNum(3)">3</button>
+                <button id="plus"onclick="displayNum('+')">+</button>
+                </div>
+                <div>
+                <button id="ac"onclick="clearBox()" class="ac">AC</button>
+                <button id="zero"onclick="displayNum(0)">0</button>
+                <button id="dvin"onclick="displayNum('/')">/</button>
+                <button id="equal"onclick="evaluateExpression()">=</button>
+                </div>
+                <div>
+                <button id="delete"onclick="removeLast()">--</button>
+                </div>
+                <div class="col-5"></div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
